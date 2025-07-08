@@ -1,7 +1,28 @@
-
-# Playwright
+# Node & Playwright
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+test-results/
+.playwright/
+blob-report/
+playwright/.cache/
+multiple-cucumber-html-reporter/
+
+# HTML Reports
+*.html
+
+# IDE folders
+.vscode/
+
+# Build output
+dist/
+build/
+out/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore generated HTML reports
+reports/multiple/
