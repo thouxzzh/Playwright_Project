@@ -8,8 +8,7 @@
     "testonly": "cross-env \"npx cucumber-js || exit 0\"",
     "test": "npm run clean:reports && npm run testonly && npm run posttest",
     "posttest": "echo Running report generation... && npx ts-node src/helper/report.ts",
-    "test:failed": "cross-env cucumber-js -p rerun"
-    //"test:failed": "cross-env ENV=prod npx cucumber-js -p rerun"
+    "test:failed": "cross-env ENV=prod npx cucumber-js -p rerun"
     
   },
   "keywords": [],
