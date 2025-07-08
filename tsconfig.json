@@ -8,7 +8,7 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "outDir": "dist",
-       "rootDir":"tests",
+     //"rootDir":"tests",
         "types":["node"]
     },
     "exclude": [

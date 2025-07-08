@@ -1,12 +1,17 @@
+import { getEnv } from '../helper/env/env';
 import { Before,After,BeforeAll,AfterAll,Status } from "@cucumber/cucumber";
 import { chromium,Browser,Page,BrowserContext } from "@playwright/test";
 import { pageFixture } from "./pagefixture";
+import { invokeBrowser } from "../helper/browsers/browserManager";
 
 let browser:Browser;
 let context: BrowserContext;
 
 BeforeAll(async function() {
-    browser=await chromium.launch({headless:false});
+    //  browser=await chromium.launch({headless:false});
+    getEnv();
+    browser = await invokeBrowser();
+
 });
 
 Before(async function() {
@@ -30,3 +35,7 @@ After(async function({pickle,result}) {
 AfterAll(async function(){
     await browser.close();
 });
+
+
+
+

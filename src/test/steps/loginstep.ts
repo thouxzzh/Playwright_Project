@@ -3,7 +3,10 @@ import { expect } from '@playwright/test';
 import { pageFixture } from '../../hooks/pagefixture';
 
 Given('User navigates to the application', { timeout: 30000 }, async function () {
-    await pageFixture.page.goto("https://bookcart.azurewebsites.net/");
+    //await pageFixture.page.goto("https://bookcart.azurewebsites.net/");
+    const baseUrl = process.env.BASEURL;
+    if (!baseUrl) throw new Error("BASEURL is not defined in environment variables");
+    await pageFixture.page.goto(baseUrl, { timeout: 10000 });
 });
 
 Given('User clicks on the login link', async function () {
