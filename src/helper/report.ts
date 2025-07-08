@@ -6,7 +6,7 @@ const executionEndTime = new Date();
 
 report.generate({
   jsonDir: "test-results",
-  reportPath: "reports/multiple",
+  reportPath: "reports",
   reportName: "Playwright BDD Report",
   metadata: {
     browser: {

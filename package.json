@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rimraf test-results reports",
+    "clean:reports": "npx rimraf test-results reports",
     "testonly": "cross-env-shell \"npx cucumber-js || exit 0\"",
     "test": "npm run clean:reports && npm run testonly && npm run posttest",
     "posttest": "echo Running report generation... && npx ts-node src/helper/report.ts"
@@ -19,6 +19,7 @@
     "@types/node": "^24.0.10",
     "cross-env": "^7.0.3",
     "multiple-cucumber-html-reporter": "^3.9.3",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2"
   }
 }
