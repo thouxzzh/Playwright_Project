@@ -14,5 +14,5 @@ Feature: User Authentication Tests
 
   Examples:
     | username     | password   | pro_name                                |
-    | LAKSITHA29   | Laksitha29 | Harry potter and the chamber of secrets |
+    | Thoushi      | Thou@123   | Harry potter and the chamber of secrets |
     | LAKS         | Sam@1234   | Harry potter and the chamber of secrets |

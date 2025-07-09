@@ -152,7 +152,7 @@ When('User clicks on the login button', async function () {
 });
 
 Then('Login should be success', { timeout: 10000 }, async function () {
-  const expectedUsername = 'LAKSITHA29';
+  const expectedUsername = 'Thoushi';
   const actualUsername = await headerPage.getLoggedInUsername(expectedUsername);
 
   expect(actualUsername).toContain(expectedUsername);
