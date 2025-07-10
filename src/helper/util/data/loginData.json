@@ -1,0 +1,17 @@
+[
+  {
+    "username": "Admin",
+    "password": "admin123",
+    "loginResult": "valid login"
+  },
+  {
+    "username": "InvalidUser",
+    "password": "wrongpass",
+    "loginResult": "invalid login"
+  },
+  {
+    "username": "",
+    "password": "wrongpass",
+    "loginResult": "empty login"
+  }
+]
