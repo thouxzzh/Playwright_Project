@@ -1,5 +1,5 @@
 @Performance
-Feature: Thoushika_10_JULY_2025_OrangeHRM_Performance
+Feature: Thoushika_11_JULY_2025_OrangeHRM_Performance
 
 Background:
   Given the user launches the OrangeHRM site
